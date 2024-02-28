@@ -107,3 +107,34 @@ body, html {
   height: 100%;
   overflow-x: hidden; 
 }
+
+#exploreButton {
+
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  font-family: var(--font-family-base);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#exploreButton:hover {
+  background-color: var(--accent-color);
+}
+
+.section-container {
+  
+  transform: translateY(100vh);
+  transition: transform 0.5s ease-out;
+}
+
+
+#AboutAuroraOS,
+#WhyAuroraOS,
+#SignUp {
+  
+  transform: translateY(0);
+}

@@ -1,9 +1,18 @@
-document.addEventListener('DOMContentLoaded', () => {
-  window.addEventListener('scroll', () => {
-    document.querySelectorAll('.parallax').forEach((elem) => {
-      const speed = elem.getAttribute('data-speed');
-      const yOffset = window.pageYOffset * speed;
-      elem.style.transform = `translateY(${yOffset}px)`;
+document.addEventListener('DOMContentLoaded', function() {
+  const exploreButton = document.getElementById('exploreButton');
+  const sections = [
+    document.getElementById('aboutAuroraOS'),
+    document.getElementById('whyAuroraOS'),
+    document.getElementById('signUp')
+  ];
+
+  exploreButton.addEventListener('click', function() {
+    let delay = 0;
+    sections.forEach(section => {
+      setTimeout(() => {
+        section.classList.add('on-screen'); 
+      }, delay);
+      delay += 500; 
     });
   });
 });
