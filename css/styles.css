@@ -45,7 +45,7 @@ body, html {
 }
 
 .signup-button:hover, .show-sections-btn:hover {
-  background-color: darken(var(--accent-color), 10%);
+   background-color: #397d32;
 }
 
 footer {
