@@ -1,18 +1,14 @@
-document.addEventListener('DOMContentLoaded', function() {
-  const exploreButton = document.getElementById('exploreButton');
-  const sections = [
-    document.getElementById('aboutAuroraOS'),
-    document.getElementById('whyAuroraOS'),
-    document.getElementById('signUp')
-  ];
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('.section-container');
+    const showSectionsBtn = document.querySelector('.show-sections-btn'); 
 
-  exploreButton.addEventListener('click', function() {
-    let delay = 0;
-    sections.forEach(section => {
-      setTimeout(() => {
-        section.classList.add('on-screen'); 
-      }, delay);
-      delay += 500; 
+    showSectionsBtn.addEventListener('click', () => {
+        let delay = 0;
+        sections.forEach(section => {
+            setTimeout(() => {
+                section.classList.add('active');
+            }, delay);
+            delay += 150; 
+        });
     });
-  });
 });
