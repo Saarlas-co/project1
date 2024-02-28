@@ -47,7 +47,6 @@ header {
 }
 
 main, footer, header h1, header p, .form-group label, button[type='submit'], footer {
-  color: var(--text-light); 
   text-shadow: 2px 2px 4px var(--shadow-color);
 }
 
