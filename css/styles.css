@@ -1,13 +1,13 @@
 :root {
-  --primary-color: #1565C0;
-  --secondary-color: #1E88E5;
+  --primary-color: #042f74;
+  --secondary-color: #042f74;
   --accent-color: #4CAF50;
   --text-color: #333;
-  --background-color: #F5F5F5;
+  --background-color: #042f74;
   --text-light: #E0F7FA;
   --shadow-color: rgba(0, 0, 0, 0.2);
-  --font-family-base: 'Roboto', sans-serif;
-  --font-family-heading: 'Montserrat', sans-serif;
+  --font-family-base: 'Verdana', sans-serif;
+  --font-family-heading: 'Courier', monospace;
 }
 
 *, *::before, *::after {
@@ -34,10 +34,9 @@ body, html {
 header {
   background-color: var(--secondary-color);
   color: var(--text-light);
-  padding: 60px 20px;
   text-align: center;
-  box-shadow: 0 2px 4px var(--shadow-color);
   font-family: var(--font-family-heading);
+  font-size: 2.5rem;
 }
 
 .parallax {
@@ -85,8 +84,8 @@ header, button[type='submit'], button[type='submit']:hover, footer {
     padding: 40px;
   }
 
-  header, section {
-    border-radius: 10px;
+  header {
+    border-radius: 0px;
     transition: all 0.3s ease-in-out;
   }
 }
@@ -97,8 +96,9 @@ header, button[type='submit'], button[type='submit']:hover, footer {
 }
 
 section {
+  border-radius: 10px;
   position: relative;
-  z-index: 2; 
+  z-index: 1; 
   background-color: rgba(255, 255, 255, 0.8); 
 }
 
