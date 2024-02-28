@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 
 *,
 *::before,
@@ -8,10 +10,9 @@
 }
 
 body, html {
-  height: 100%;
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #ffffff;
-  color: #333;
+  font-family: 'Roboto', sans-serif;
+  background-color: #ECEFF1;
+  color: #37474F;
   line-height: 1.6;
 }
 
@@ -22,34 +23,34 @@ body, html {
 }
 
 header {
-  width: 100%; 
-  background-color: #007BFF; 
-  color: #fff;
-  padding: 40px 20px; 
+  width: 100%;
+  background-color: #1E88E5; 
+  color: #ffffff;
+  padding: 60px 20px;
   text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-  font-size: 2rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
 header p {
-  font-size: 1.2rem;
+  font-weight: 400;
   margin-bottom: 2rem;
 }
 
 main {
-  flex: 1;
   padding: 20px;
 }
 
 section {
-  background-color: #f8f9fa;
+  background-color: #ffffff;
   border-radius: 8px;
   padding: 20px;
   margin: 20px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .form-group {
@@ -58,38 +59,42 @@ section {
 
 .form-group label {
   display: block;
-  margin-bottom: 5px;
-  font-weight: bold;
+  margin-bottom: 10px;
+  font-weight: 500;
 }
 
 .form-group input[type='text'],
 .form-group input[type='email'],
 .form-group select {
   width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 12px;
+  border: 1px solid #B0BEC5;
   border-radius: 4px;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 button[type='submit'] {
   width: 100%;
-  background-color: #007BFF;
+  background-color: #1E88E5;
   color: #ffffff;
-  padding: 10px;
+  padding: 15px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  font-size: 1.1rem;
-  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  font-weight: 500;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button[type='submit']:hover {
-  background-color: #0056b3;
+  background-color: #1565C0;
+  transform: translateY(-2px);
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: #37474F;
+  color: #CFD8DC;
   text-align: center;
   padding: 20px 0;
   font-size: 0.9rem;
@@ -97,14 +102,12 @@ footer {
 
 /* Media Queries */
 @media screen and (min-width: 768px) {
-  header, main, footer {
-    padding-left: 20px;
-    padding-right: 20px;
+  .body-container {
+    padding: 40px;
   }
 
   header {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 80px 20px;
   }
 
   section {
