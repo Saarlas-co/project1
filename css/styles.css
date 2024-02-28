@@ -1,4 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+:root {
+  --primary-color: #1565C0;
+  --secondary-color: #1E88E5;
+  --accent-color: #4CAF50;
+  --text-color: #333;
+  --background-color: #F5F5F5;
+  --text-light: #E0F7FA;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+  --font-family-base: 'Roboto', sans-serif;
+  --font-family-heading: 'Montserrat', sans-serif;
+}
 
 *, *::before, *::after {
   margin: 0;
@@ -7,9 +18,9 @@
 }
 
 body, html {
-  font-family: 'Roboto', sans-serif;
-  background-color: #F5F5F5; 
-  color: #333; 
+  font-family: var(--font-family-base);
+  background-color: var(--background-color); 
+  color: var(--text-color); 
   line-height: 1.6;
   overflow-x: hidden;
 }
@@ -22,51 +33,52 @@ body, html {
 }
 
 header {
-  background-color: #1E88E5;
-  color: #ffffff;
+  background-color: var(--secondary-color);
+  color: var(--text-light);
   padding: 60px 20px;
   text-align: center;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 2px 4px var(--shadow-color);
+  font-family: var(--font-family-heading);
 }
 
 .parallax {
-  background-image: url('images/logo.jpeg');
   height: 500px; 
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url('images/logo.jpeg') no-repeat center / cover fixed;
 }
 
 main, footer, header h1, header p, .form-group label, button[type='submit'], footer {
-  color: #E0F7FA; 
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+  color: var(--text-light); 
+  text-shadow: 2px 2px 4px var(--shadow-color);
 }
 
 section {
   background-color: #FFFFFF; 
   padding: 20px; 
   margin: 20px 0; 
-  border-color: #78909C;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+  box-shadow: 0 2px 5px var(--shadow-color); 
 }
 
 .form-group input[type='text'], .form-group input[type='email'], .form-group select {
-  border-color: #78909C;
+  border: 1px solid #78909C;
+  padding: 8px;
+  width: 100%;
+  margin-top: 5px;
 }
 
 button[type='submit'] {
-  background-color: #4CAF50; 
+  background-color: var(--accent-color); 
+  color: var(--text-light);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
 }
-
 
 section:nth-child(odd) {
   background-color: #E8F5E9; 
 }
 
 header, button[type='submit'], button[type='submit']:hover, footer {
-  background: linear-gradient(145deg, #1E88E5, #1565C0);
+  background: linear-gradient(145deg, var(--secondary-color), var(--primary-color));
 }
 
 /* Media Queries */
@@ -74,7 +86,7 @@ header, button[type='submit'], button[type='submit']:hover, footer {
   .body-container {
     padding: 40px;
   }
-  
+
   header, section {
     border-radius: 10px;
     transition: all 0.3s ease-in-out;

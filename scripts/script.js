@@ -1,10 +1,9 @@
-document.addEventListener('scroll', function() {
-  const parallaxElements = document.querySelectorAll('.parallax');
-  const scrollTop = window.pageYOffset;
-
-  parallaxElements.forEach(function(elem) {
-    var speed = elem.getAttribute('data-speed');
-    var elemY = scrollTop * speed;
-    elem.style.transform = 'translateY(' + elemY + 'px)';
+document.addEventListener('DOMContentLoaded', () => {
+  window.addEventListener('scroll', () => {
+    document.querySelectorAll('.parallax').forEach((elem) => {
+      const speed = elem.getAttribute('data-speed');
+      const yOffset = window.pageYOffset * speed;
+      elem.style.transform = `translateY(${yOffset}px)`;
+    });
   });
 });
