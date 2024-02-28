@@ -1,14 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const sections = document.querySelectorAll('.section-container');
-  const showSectionsBtn = document.querySelector('.show-sections-btn');
-
-  showSectionsBtn.addEventListener('click', () => {
-    let delay = 0;
-    sections.forEach(section => {
-      setTimeout(() => {
-        section.classList.add('active');
-      }, delay);
-      delay += 150;
+document.addEventListener('DOMContentLoaded', function() {
+    var exploreButton = document.getElementById('exploreButton');
+    exploreButton.addEventListener('click', function() {
+        var mainContent = document.getElementById('mainContent');
+        mainContent.style.display = mainContent.style.display === 'none' ? 'block' : 'none';
     });
-  });
+
+    var signupForm = document.getElementById('signupForm');
+    signupForm.addEventListener('submit', function(event) {
+        event.preventDefault(); 
+        console.log("form submitted");
+    });
 });

@@ -9,56 +9,44 @@
     <script src="scripts/script.js" defer></script>
 </head>
 <body>
-<div class="body-container"> 
     <header>
         <h1>Explore AuroraOS: The Future of Context-Aware Computing</h1>
-        <p>Be a part of the evolution with AuroraOS Beta Testing.</p>
+        <button id="exploreButton">Explore</button>
     </header>
-
-	
-    <main>
-        <section class="section-container">
-            <h2 id="AboutAuroraOS">About AuroraOS</h2>
-            <p>Developed by Saarlas Company in 2024, AuroraOS is a groundbreaking, context-aware operating system designed to revolutionize the way users interact with their devices. Leveraging advanced machine learning algorithms, AuroraOS dynamically adapts its user interface and functionalities to suit the user's current context—be it work, personal, gaming, or any other scenario. Experience an OS that learns your habits, optimizes your workflow, and personalizes your computing environment.</p>
+    <main id="mainContent">
+        <section>
+            <h2>About AuroraOS</h2>
+            <p>Developed by Saarlas Company in 2024, AuroraOS is a groundbreaking, context-aware operating system designed to revolutionize the way users interact with their devices...</p>
         </section>
-        <section class="section-container">
-            <h2 id="WhyAuroraOS">Why AuroraOS</h2>
+        <section>
+            <h2>Why AuroraOS</h2>
             <ul>
-                <li><strong>Adaptive User Experience:</strong> AuroraOS understands and anticipates your needs, adjusting settings and notifications to match your current activity seamlessly.</li>
-                <li><strong>Intelligent App Recommendations:</strong> Receive suggestions for apps and tools at the right moment, enhancing productivity and entertainment based on your usage patterns.</li>
-                <li><strong>Privacy-Centric Design:</strong> Built with your privacy in mind, AuroraOS ensures that personalization and adaptability never come at the expense of your security.</li>
-                <li><strong>Cool Fact:</strong> AuroraOS was named after the aurora borealis, reflecting its dynamic and fluid nature, capable of changing its appearance to dazzle and assist its users.</li>
+                <li>Adaptive User Experience: AuroraOS understands and anticipates your needs...</li>
+                <li>Intelligent App Recommendations: Receive suggestions for apps and tools...</li>
+                <li>Privacy-Centric Design: Built with your privacy in mind...</li>
+                <li>Cool Fact: AuroraOS was named after the aurora borealis...</li>
             </ul>
         </section>
-        <section class="section-container">
-            <h2 id="SignUp">Sign Up for Beta Access</h2>
-            <p>Your feedback is invaluable as we refine and enhance AuroraOS. Join our beta program and help shape the future of computing.</p>
-            <form id="betaSignupForm">
-                <div class="form-group">
-                    <label for="fullName">Full Name:</label>
-                    <input type="text" id="fullName" name="fullName" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="form-group">
-                    <label for="usageContext">Primary Usage Context:</label>
-                    <select id="usageContext" name="usageContext">
-                        <option value="work">Work</option>
-                        <option value="personal">Personal</option>
-                        <option value="gaming">Gaming</option>
-                        <option value="other">Other</option>
-                    </select>
-                </div>
-                <button type="submit" class="signup-button">Sign Up</button>
+        <section>
+            <h2>Sign Up for AuroraOS Beta</h2>
+            <form id="signupForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="interest">Interest in AuroraOS:</label>
+                <select id="interest" name="interest">
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="gaming">Gaming</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                <button type="submit">Submit</button>
             </form>
         </section>
-		<button class="show-sections-btn">Show Sections</button>
     </main>
-</div> 
-<footer>
-    <p>&copy; 2024 Saarlas Company. All rights reserved.</p>
-</footer>
 </body>
 </html>
