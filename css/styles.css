@@ -8,59 +8,65 @@
 
 body, html {
   font-family: 'Roboto', sans-serif;
-  background-color: #ECEFF1;
-  color: #37474F;
+  background-color: #F5F5F5; 
+  color: #333; 
   line-height: 1.6;
-  overflow-x: hidden; 
+  overflow-x: hidden;
 }
 
 .body-container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  padding: 20px; 
 }
 
 header {
-  background-color: #1E88E5; 
+  background-color: #1E88E5;
   color: #ffffff;
   padding: 60px 20px;
   text-align: center;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  font-family: 'Montserrat', sans-serif; 
+  font-family: 'Montserrat', sans-serif;
 }
 
-
 .parallax {
-  
   background-image: url('images/logo.jpeg');
-
-  
-  height: 100%; 
-
- 
+  height: 500px; 
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-
 main, footer, header h1, header p, .form-group label, button[type='submit'], footer {
   color: #E0F7FA; 
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.2); 
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
 }
 
-section, .form-group input[type='text'], .form-group input[type='email'], .form-group select {
-  border-color: #78909C; 
+section {
+  background-color: #FFFFFF; 
+  padding: 20px; 
+  margin: 20px 0; 
+  border-color: #78909C;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+.form-group input[type='text'], .form-group input[type='email'], .form-group select {
+  border-color: #78909C;
 }
 
 button[type='submit'] {
-  background-color: #29B6F6; 
+  background-color: #4CAF50; 
 }
 
 
+section:nth-child(odd) {
+  background-color: #E8F5E9; 
+}
+
 header, button[type='submit'], button[type='submit']:hover, footer {
-  background: linear-gradient(145deg, #1E88E5, #1565C0); 
+  background: linear-gradient(145deg, #1E88E5, #1565C0);
 }
 
 /* Media Queries */
@@ -70,7 +76,7 @@ header, button[type='submit'], button[type='submit']:hover, footer {
   }
   
   header, section {
-    border-radius: 10px; 
-    transition: all 0.3s ease-in-out; 
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
   }
 }
