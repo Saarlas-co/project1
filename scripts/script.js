@@ -2,8 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
     
     document.getElementById('exploreButton').addEventListener('click', function() {
         var mainContent = document.getElementById('mainContent');
-        
-        mainContent.classList.add('visible'); 
+        mainContent.scrollIntoView({ behavior: 'smooth' });
     });
 
     
