@@ -34,12 +34,14 @@ main {
     margin: 20px auto;
 }
 
+
 section {
     margin-bottom: 20px;
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 10px;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eaeaea;
 }
 
 h2 {
@@ -51,20 +53,33 @@ p {
     line-height: 1.6;
 }
 
+
 ul {
     list-style-type: none;
     padding: 0;
 }
 
+li {
+    position: relative;
+    padding-left: 20px;
+}
+
 li::before {
-    content: "•";
-    color: #007bff;
-    display: inline-block;
-    width: 1em;
-    margin-left: -1em;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #6A82FB, #FC5C7D);
 }
 
 form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px auto;
     max-width: 600px;
     padding: 20px;
@@ -79,51 +94,40 @@ label {
 }
 
 
-
 input, select, button[type="submit"] {
-    width: 100%; 
+    width: calc(100% - 22px);
     padding: 10px;
     margin-bottom: 10px;
-    border: 2px solid;
-    border-image: linear-gradient(to right, #0F2027, #203A43, #2C5364); 
-    border-image-slice: 1;
+    border: 2px solid #ddd;
     border-radius: 5px;
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
-
 button[type="submit"] {
-    background-color: #007bff; 
-    color: white; 
-    border: none; 
+    background-color: #007bff;
+    color: white;
+    border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 button[type="submit"]:hover {
-    background-color: #0056b3; 
-}
-
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    background-color: #0056b3;
 }
 
 
 @media (min-width: 600px) {
     input, select, button[type="submit"] {
-        width: 80%; 
+        width: 80%;
     }
 }
 
 @media (min-width: 900px) {
     form {
-        max-width: 800px; 
+        max-width: 800px;
     }
     
     input, select, button[type="submit"] {
-        width: 75%; 
+        width: 75%;
     }
 }
