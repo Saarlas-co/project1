@@ -9,5 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     signupForm.addEventListener('submit', function(event) {
         event.preventDefault();
         console.log("Form submitted");
+        alert("Thank you for signing up for AuroraOS Beta!");
     });
 });
