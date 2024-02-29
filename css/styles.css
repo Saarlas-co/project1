@@ -79,6 +79,7 @@ label {
 }
 
 
+
 input, select, button[type="submit"] {
     width: 100%; 
     padding: 10px;
@@ -88,6 +89,19 @@ input, select, button[type="submit"] {
     border-image-slice: 1;
     border-radius: 5px;
     box-sizing: border-box; 
+}
+
+
+button[type="submit"] {
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; 
 }
 
 
