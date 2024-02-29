@@ -1,10 +1,10 @@
-
 body {
     background-color: #042f74;
     color: white;
     font-family: 'Courier New', monospace;
+    margin: 0;
+    padding: 0;
 }
-
 
 .explore-container {
     display: flex;
@@ -13,26 +13,7 @@ body {
     height: 100vh;
 }
 
-
-#mainContent {
-    display: none;
-}
-
-
-#mainContent.visible {
-    display: block;
-    max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-
-#exploreButton {
-    display: block;
-    margin: 20px auto;
+button#exploreButton {
     padding: 15px 30px;
     font-size: 18px;
     background-color: #007bff;
@@ -43,28 +24,85 @@ body {
     transition: background-color 0.3s ease;
 }
 
-
-#exploreButton:hover {
+button#exploreButton:hover {
     background-color: #0056b3;
 }
 
-input, select, button {
-    width: 90%;
-    margin: 10px auto;
+main {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+    color: #007bff;
+    margin-top: 0;
+}
+
+p {
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li::before {
+    content: "•";
+    color: #007bff;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+form {
+    margin: 20px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+label {
     display: block;
-    padding: 10px;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-@media (min-width: 600px) {
-    input, select, button {
-        width: 80%;
-    }
+button[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-@media (min-width: 900px) {
-    input, select, button {
-        width: 50%;
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+@media (min-width: 600px) {
+    input, select, button[type="submit"] {
+        width: 80%;
     }
 }
