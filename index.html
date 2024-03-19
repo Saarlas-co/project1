@@ -1,59 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore AuroraOS</title>
-	<link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <script src="scripts/script.js" defer></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore AuroraOS</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="scripts/script.js" defer></script>
 </head>
 <body>
-
-<div class="explore-container">
+  <div class="explore-container">
     <button id="exploreButton">Explore AuroraOS</button>
-</div>
-
-<main id="mainContent">
+  </div>
+  <main id="mainContent">
     <section>
-        <h2>About AuroraOS</h2>
-        <p>Developed by Saarlas Company in 2024, AuroraOS is a groundbreaking, context-aware operating system designed to revolutionize the way users
-		interact with their devices. Equipped with an AI-driven personal assistant, AuroraOS anticipates the user's needs, offering timely suggestions 
-		and automating daily tasks. Its innovative, modular architecture allows for unparalleled customization, enabling users to tailor the system to
-		their precise preferences and workflows. With AuroraOS, Saarlas Company promises a more intuitive, efficient, and engaging computing experience, 
-		setting a new benchmark for what an operating system can be.</p>
+      <h2>About AuroraOS</h2>
+      <p>Developed by Saarlas Company in 2024, AuroraOS is a groundbreaking, context-aware operating system designed to revolutionize the way users interact with their devices. 
+	  Equipped with an AI-driven personal assistant, AuroraOS anticipates the user's needs, offering timely suggestions and automating daily tasks. 
+	  Its innovative, modular architecture allows for unparalleled customization, enabling users to tailor the system to their precise preferences and workflows. 
+	  With AuroraOS, Saarlas Company promises a more intuitive, efficient, and engaging computing experience, setting a new benchmark for what an operating system can be.</p>
     </section>
     <section>
-        <h2>Why AuroraOS</h2>
-        <ul>
-            <li>Adaptive User Experience</li>
-            <li>Intelligent App Recommendations</li>
-            <li>Privacy-Centric Design</li>
-        </ul>
+      <h2>Why AuroraOS</h2>
+      <ul>
+        <li>Adaptive User Experience</li>
+        <li>Intelligent App Recommendations</li>
+        <li>Privacy-Centric Design</li>
+      </ul>
     </section>
     <section>
-        <h2>Sign Up for AuroraOS Beta</h2>
-        <form id="signupForm">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="interest">Interest in AuroraOS:</label>
-            <select id="interest" name="interest">
-                <option value="work">Work</option>
-                <option value="personal">Personal</option>
-                <option value="gaming">Gaming</option>
-                <option value="other">Other</option>
-            </select>
-            
-            <button type="submit">Join Beta!</button>
-        </form>
+      <h2>Sign Up for AuroraOS Beta</h2>
+      <form id="signupForm" method="get" action="#null" autocomplete="on">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="interest">Interest in AuroraOS:</label>
+        <select id="interest" name="interest">
+          <option value="work">Work</option>
+          <option value="personal">Personal</option>
+          <option value="gaming">Gaming</option>
+          <option value="other">Other</option>
+        </select>
+        <button type="submit">Join Beta!</button>
+      </form>
     </section>
-</main>
-<footer>
+  </main>
+  <footer>
     © 2024-2026 Saarlas Company AuroraOS | All Rights Reserved
-</footer>
+  </footer>
 </body>
 </html>
